@@ -10,8 +10,8 @@
     "pnpm": ">=11 <12"
   },
   "scripts": {
-    "dev": "vite --host 127.0.0.1",
-    "build": "vite build && pnpm check:bundle",
+    "dev": "node init && vite --host 127.0.0.1",
+    "build": "node init && vite build && pnpm check:bundle",
     "check:bundle": "node --experimental-strip-types scripts/check-bundle-budgets.ts",
     "typecheck": "tsc --noEmit",
     "lint": "pnpm lint:conventions && pnpm typecheck",
@@ -21,7 +21,7 @@
     "vendor": "bash vendor.sh",
     "all": "bash build.sh",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "node init && storybook build"
   },
   "dependencies": {
     "@hot-labs/near-connect": "0.11.4",

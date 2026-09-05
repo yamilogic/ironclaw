@@ -1,7 +1,4 @@
 
-.env
-.env.local
-.env.*
 !.env.example
 
 # macOS metadata
@@ -130,3 +127,7 @@ mutants.out.old/
 
 # Added by cleanup skill: campaign state, local-only.
 .cleanup/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
